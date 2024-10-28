@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <!-- Link to the css file -->
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <title>Notes</title>
+  </head>
+  <body>
+    <div id="app">
+      <form>
+        <label>
+          Choose date:
+          <br/>
+          <input type="date" id="date"/ >
+          <button id="selectDateButton" type="button">select</button>
+          <br/>
+          <br/>
+          Search text:
+          <input type="text" id="searchText"/ >
+          <button id="searchTextButton" type="button">search</button>  
+        </label>
+      </form>
+      
+      <div id="main">
+        <h1 class="title"></h1>
+        <h4 class="displayDate"></h4>
+        <hr>
+        <p  class="content"></p>
+      </div>
+
+      <div id="list">
+      </div>
+
+      <div id="actions">
+        <!-- clicks will be caught and handled in javascript -->
+        <button class="action" type="button">+</button>
+        <button class="action" type="button">-</button>
+        <button class="action" type="button">♲</button>
+      </div>
+      <dialog id="dialog">
+        <input/>
+        <textarea></textarea>
+        <button id="dialogSubmit" type="button"></button>
+      </dialog>
+    </div>
+    <!-- Link to the javascript file -->
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
